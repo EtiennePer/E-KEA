@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">E-KEA</string>
+    <string name="activity_home_title">Projet approche bilan de compétence</string>
+    <string name="activity_home_footer">Master 1 ICE - Informatique collaborative en entreprise</string>
 </resources>
