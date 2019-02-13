@@ -15,230 +15,181 @@
         app:layout_constraintGuide_percent="0.4" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_profile_horiz"
+        android:id="@+id/RESUME_gd_verticalItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/RESUME_gd_horizontalheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_vertical_line"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_vertical_items"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
-
-    <!-- Item 1 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
-
-    <!-- Item 2 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.32" />
-
-    <!-- Item 3 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
-
-    <!-- Item 4 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.56" />
-
-    <!-- Item 5 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68" />
-
-    <!-- Item 6 -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_item6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
-
-    <!-- Hide bar -->
-    <android.support.constraint.Guideline
-        android:id="@+id/RESUME_gd_hideBard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.849" />
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/RESUME_img_profile"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
         app:civ_border_color="#4b8f74"
         app:civ_border_width="4dp"
         app:civ_shadow="true"
         app:civ_shadow_color="#e0e2de"
         app:civ_shadow_radius="0"
-        app:layout_constraintBottom_toTopOf="@id/RESUME_gd_profile_horiz"
+        app:layout_constraintBottom_toTopOf="@id/RESUME_gd_horizontalheader"
         app:layout_constraintEnd_toStartOf="@id/RESUME_gd_profileImage"
         app:layout_constraintRight_toLeftOf="@id/RESUME_gd_profileImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/RESUME_tv_FirstnameLastname"
-        android:layout_width="wrap_content"
+        android:id="@+id/RESUME_tv_Firstname"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/h1"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/RESUME_img_profile"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RESUME_tv_Lastname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/RESUME_img_profile"
+        app:layout_constraintTop_toBottomOf="@id/RESUME_tv_Firstname" />
 
     <View
-        android:layout_width="2dp"
+        android:id="@+id/RESUME_v_verticalBar"
+        android:layout_width="4dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_profile_horiz"/>
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_horizontalheader" />
 
     <!-- Menu Items start here -->
 
     <!-- Item 1 -->
     <LinearLayout
+        android:id="@+id/RESUME_ll_item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item1"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
+        app:layout_constraintBottom_toTopOf="@+id/RESUME_ll_item2"
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+        tools:layout_editor_absoluteX="82dp">
 
         <View
             android:layout_width="80dp"
             android:layout_height="2dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="center_vertical"
-            />
+            android:background="@color/colorPrimary" />
 
         <Button
+            android:id="@+id/RESUME_bt_hobbies"
             android:layout_width="150dp"
             android:layout_height="70dp"
-            android:text="CV"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:text="Hobbies"
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
     <!-- Item 2 -->
     <LinearLayout
+        android:id="@+id/RESUME_ll_item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item2"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
+        app:layout_constraintBottom_toTopOf="@+id/RESUME_ll_item3"
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_ll_item1"
+        tools:layout_editor_absoluteX="82dp">
 
         <View
             android:layout_width="80dp"
             android:layout_height="2dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="center_vertical"
-            />
+            android:background="@color/colorPrimary" />
 
         <Button
+            android:id="@+id/RESUME_bt_expectations"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Attentes"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
     <!-- Item 3 -->
     <LinearLayout
+        android:id="@+id/RESUME_ll_item3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item3"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
+        app:layout_constraintBottom_toTopOf="@+id/RESUME_ll_item6"
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_ll_item2"
+        tools:layout_editor_absoluteX="82dp">
 
         <View
             android:layout_width="80dp"
             android:layout_height="2dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="center_vertical"
-            />
+            android:background="@color/colorPrimary" />
 
         <Button
+            android:id="@+id/RESUME_bt_skills"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:text="Compétences"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
     <!-- Item 4 -->
     <LinearLayout
+        android:id="@+id/RESUME_ll_item4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item4"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
+        app:layout_constraintBottom_toTopOf="@+id/RESUME_ll_item5"
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_ll_item6"
+        tools:layout_editor_absoluteX="82dp">
 
         <View
             android:layout_width="80dp"
             android:layout_height="2dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="center_vertical"
-            />
+            android:background="@color/colorPrimary" />
 
         <Button
+            android:id="@+id/RESUME_bt_personnality"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:text="Personnalité"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
     <!-- Item 5 -->
     <LinearLayout
+        android:id="@+id/RESUME_ll_item5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item5"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
-
-        <View
-            android:layout_width="80dp"
-            android:layout_height="2dp"
-            android:background="@color/colorPrimary"
-            android:layout_gravity="center_vertical"
-            />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_ll_item4"
+        app:layout_constraintEnd_toEndOf="@id/RESUME_ll_item2"
+        tools:layout_editor_absoluteX="82dp">
 
         <Button
+            android:id="@+id/RESUME_bt_resume"
             android:layout_width="150dp"
             android:layout_height="70dp"
-            android:text="Hobbies"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:text="CV"
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
@@ -247,35 +198,35 @@
         android:id="@+id/RESUME_ll_item6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_item6"
-        app:layout_constraintStart_toEndOf="@id/RESUME_gd_vertical_items">
+        app:layout_constraintBottom_toTopOf="@+id/RESUME_ll_item4"
+        app:layout_constraintStart_toEndOf="@id/RESUME_gd_verticalItems"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_ll_item3"
+        tools:layout_editor_absoluteX="74dp">
 
         <View
             android:layout_width="80dp"
             android:layout_height="2dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="center_vertical"
-            />
+            android:background="@color/colorPrimary" />
 
         <Button
+            android:id="@+id/RESUME_bt_carreer"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Carrière"
-            android:theme="@style/AppTheme.Button"
-            />
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 
     <!-- Footer -->
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_hideBard"
-        app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
-        android:background="@android:color/white">
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="@id/RESUME_v_verticalBar">-->
 
-    </View>
-
+    <!--</View>-->
 
 
 </android.support.constraint.ConstraintLayout>

@@ -9,7 +9,7 @@ import ecom.m1ice.e_kea.models.User;
 public class GlobalVars extends Application {
 
 
-    private User actualUser;
+    private static User actualUser;
 
     public User getActualUser() {
 

@@ -6,7 +6,6 @@ public interface User {
     String getFirstname();
     String getLastname();
     Date getBithDate();
-    String getDescription();
     String getPhotoPathName();
     String getResumePathName();
 }

@@ -21,11 +21,6 @@ public class Kais implements User {
     }
 
     @Override
-    public String getDescription() {
-        return null;
-    }
-
-    @Override
     public String getPhotoPathName() {
         return null;
     }

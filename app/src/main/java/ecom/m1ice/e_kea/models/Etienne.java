@@ -19,18 +19,12 @@ public class Etienne implements User {
     }
 
     @Override
-    public String getDescription() {
-        return "Bonjour voici une descirpiot de quelques phrase sur moi. Elle est vraiment très intéressante" +
-                " n'est ce pas ? oui bonjour.";
-    }
-
-    @Override
     public String getPhotoPathName() {
         return "pp_etienne.png";
     }
 
     @Override
     public String getResumePathName() {
-        return "cv_etienne.png";
+        return "cv_etienne.pdf";
     }
 }
