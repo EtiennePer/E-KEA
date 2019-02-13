@@ -12,12 +12,12 @@ public class Kais implements User {
 
     @Override
     public String getLastname() {
-        return "Kais";
+        return "Ben Youssef";
     }
 
     @Override
     public Date getBithDate() {
-        return null;
+        return new Date(1994, 8, 07);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Kais implements User {
 
     @Override
     public String getPhotoPathName() {
-        return null;
+        return "pp_kais.png";
     }
 
     @Override
