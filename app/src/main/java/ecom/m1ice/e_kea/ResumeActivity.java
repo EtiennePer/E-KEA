@@ -1,7 +1,6 @@
 package ecom.m1ice.e_kea;
 
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -35,11 +34,11 @@ public class ResumeActivity extends AppCompatActivity {
         // Retrieve the good drawable
         Drawable img = null;
         if (actualUser.getFirstname().toLowerCase().contains("eti")) {
-            img = getResources().getDrawable(R.drawable.pp_etienne);
+            img = getResources().getDrawable(R.drawable.etienne);
         } else if (actualUser.getFirstname().toLowerCase().contains("ka")) {
-            img = getResources().getDrawable(R.drawable.pp_kais);
+            img = getResources().getDrawable(R.drawable.kaiss);
         } else if (actualUser.getFirstname().toLowerCase().contains("alex")) {
-            img = getResources().getDrawable(R.drawable.pp_alexandre);
+            img = getResources().getDrawable(R.drawable.alexandre);
         }
 
         img_pp.setImageDrawable(img);

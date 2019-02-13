@@ -7,12 +7,12 @@ public class Kais implements User {
 
     @Override
     public String getFirstname() {
-        return null;
+        return "Kais";
     }
 
     @Override
     public String getLastname() {
-        return null;
+        return "Kais";
     }
 
     @Override
