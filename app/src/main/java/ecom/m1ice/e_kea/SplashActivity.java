@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void routeToAppropriatePage() {
 
-        Intent intent = new Intent(this, ResumeActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }
