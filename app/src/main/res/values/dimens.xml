@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">4dp</dimen>
+    <dimen name="padding">4dp</dimen>
+
+    <dimen name="h1">30sp</dimen>
+    <dimen name="h2">26sp</dimen>
+    <dimen name="h3">26sp</dimen>
+    <dimen name="h4">18sp</dimen>
+</resources>
