@@ -1,10 +1,13 @@
 package ecom.m1ice.e_kea;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 
 import com.mikhaellopez.circularimageview.CircularImageView;
 
@@ -42,5 +45,10 @@ public class ResumeActivity extends AppCompatActivity {
         }
 
         img_pp.setImageDrawable(img);
+
+    }
+
+    public void navigateToPersonnality(View view) {
+        startActivity(new Intent(this, PersonnalityActivity.class));
     }
 }
