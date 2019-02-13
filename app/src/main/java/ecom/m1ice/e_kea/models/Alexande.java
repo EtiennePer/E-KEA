@@ -5,12 +5,12 @@ import java.util.Date;
 public class Alexande implements User {
     @Override
     public String getFirstname() {
-        return null;
+        return "Alexandre";
     }
 
     @Override
     public String getLastname() {
-        return null;
+        return "Pausé";
     }
 
     @Override

@@ -26,7 +26,7 @@ public class Etienne implements User {
 
     @Override
     public String getPhotoPathName() {
-        return "pp_etienne.png";
+        return "etienne.png";
     }
 
     @Override

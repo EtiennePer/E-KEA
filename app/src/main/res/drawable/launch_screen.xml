@@ -9,7 +9,7 @@
     <item>
 
         <bitmap
-            android:src="@drawable/pp_kais"
+            android:src="@drawable/kaiss"
             android:gravity="center"/>
 
     </item>
