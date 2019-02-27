@@ -51,4 +51,7 @@ public class ResumeActivity extends AppCompatActivity {
     public void navigateToPersonnality(View view) {
         startActivity(new Intent(this, PersonnalityActivity.class));
     }
+    public void navigateToHobbies(View view) {
+        startActivity(new Intent(this, HobbiesActivity.class));
+    }
 }

@@ -40,4 +40,10 @@ public class Kais implements User {
         String[] array = {"tenace","apprendre","travailleur", "curieux", "passionne", "integre"};
         return array;
     }
+
+    @Override
+    public String[] getHobbies() {
+        String[] array = {"musculation","peche","photo", "danser", "cuisine"};
+        return array;
+    }
 }

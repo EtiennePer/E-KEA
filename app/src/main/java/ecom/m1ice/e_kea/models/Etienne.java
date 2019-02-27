@@ -39,4 +39,10 @@ public class Etienne implements User {
         String[] array = {"integre","passionne","tenace", "apprendre", "curieux", "fiable"};
         return array;
     }
+
+    @Override
+    public String[] getHobbies() {
+        String[] array = {"alcool","cinema","echec", "lecture", "sport"};
+        return array;
+    }
 }
