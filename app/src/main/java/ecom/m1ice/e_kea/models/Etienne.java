@@ -33,4 +33,10 @@ public class Etienne implements User {
     public String getResumePathName() {
         return "cv_etienne.png";
     }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"integre","passionne","tenace", "apprendre", "curieux", "fiable"};
+        return array;
+    }
 }

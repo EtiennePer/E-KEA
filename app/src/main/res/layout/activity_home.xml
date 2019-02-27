@@ -44,7 +44,7 @@
         android:clickable="true"
         android:focusable="true"
         android:onClick="imageClick"
-        android:src="@drawable/pp_kais"
+        android:src="@drawable/kaiss"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toBottomOf="parent"

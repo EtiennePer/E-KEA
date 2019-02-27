@@ -27,11 +27,17 @@ public class Kais implements User {
 
     @Override
     public String getPhotoPathName() {
-        return "pp_kais.png";
+        return "kaiss.png";
     }
 
     @Override
     public String getResumePathName() {
         return null;
+    }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"tenace","apprendre","travailleur", "curieux", "passionne", "integre"};
+        return array;
     }
 }

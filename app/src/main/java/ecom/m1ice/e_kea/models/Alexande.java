@@ -32,4 +32,10 @@ public class Alexande implements User {
     public String getResumePathName() {
         return null;
     }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"apprendre","integre","confiance", "determine", "fiable", "curieux"};
+        return array;
+    }
 }

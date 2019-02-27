@@ -9,4 +9,5 @@ public interface User {
     String getDescription();
     String getPhotoPathName();
     String getResumePathName();
+    String[] getPersonnality();
 }

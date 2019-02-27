@@ -7,42 +7,6 @@
     android:background="@android:color/white"
     tools:context=".PersonnalityActivity">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.615"
-        app:srcCompat="@drawable/curieux" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/fiable" />
-
     <android.support.constraint.Guideline
         android:id="@+id/RESUME_gd_profileImage"
         android:layout_width="wrap_content"
@@ -118,81 +82,73 @@
         app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
         app:layout_constraintTop_toBottomOf="@id/RESUME_gd_profile_horiz" />
 
-    <!-- Menu Items start here -->
-
-    <!-- Item 1 -->
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imgView0"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+        app:srcCompat="@drawable/curieux" />
+
+    <ImageView
+        android:id="@+id/imgView1"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+        app:srcCompat="@drawable/apprendre" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
         app:srcCompat="@drawable/independant" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.615"
-        app:srcCompat="@drawable/confiance" />
+        android:id="@+id/imgView3"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/determine" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imgView4"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/apprendre_nb" />
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/integre" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"
-        app:srcCompat="@drawable/travailleur_nb" />
+        android:id="@+id/imgView5"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/tenace" />
+
+    <!-- Menu Items start here -->
+
+    <!-- Item 1 -->
 
     <!-- Item 2 -->
 
