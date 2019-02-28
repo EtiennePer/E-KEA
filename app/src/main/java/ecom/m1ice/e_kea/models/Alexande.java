@@ -24,6 +24,16 @@ public class Alexande implements User {
     }
 
     @Override
+    public String getAttentesPersonelles() {
+        return "Hello";
+    }
+
+    @Override
+    public String getAttentesProfessionnelles() {
+        return "Hello";
+    }
+
+    @Override
     public String getPhotoPathName() {
         return null;
     }

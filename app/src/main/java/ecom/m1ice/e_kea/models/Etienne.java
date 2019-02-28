@@ -40,6 +40,16 @@ public class Etienne implements User {
     }
 
     @Override
+    public String getAttentesPersonelles() {
+        return "Hello";
+    }
+
+    @Override
+    public String getAttentesProfessionnelles() {
+        return "Hello";
+    }
+
+    @Override
     public String[] getHobbies() {
         String[] array = {"alcool","cinema","echec", "lecture", "sport"};
         return array;

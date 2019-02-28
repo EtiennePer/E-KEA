@@ -92,6 +92,74 @@
                 app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
                 app:layout_constraintTop_toBottomOf="@id/RESUME_gd_profile_horiz" />
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="387dp"
+                android:layout_height="191dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:text="@string/activity_expectation_attentes_personnelles_title" />
+
+                    <TextView
+                        android:id="@+id/textViewPersonnelles"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:text="@string/activity_expectation_attentes_personnelles_description" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="387dp"
+                android:layout_height="203dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:text="@string/activity_expectation_attentes_professionnelles_title" />
+
+                    <TextView
+                        android:id="@+id/textViewProfessionnelles"
+                        android:layout_width="match_parent"
+                        android:layout_height="166dp"
+                        android:text="@string/activity_expectation_attentes_professionnelles_description" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
             <!-- Menu Items start here -->
 
             <!-- Item 1 -->
@@ -107,6 +175,7 @@
             <!-- Item 6 -->
 
             <!-- Footer -->
+
 
 
         </android.support.constraint.ConstraintLayout>

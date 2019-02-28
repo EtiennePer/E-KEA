@@ -11,4 +11,6 @@ public interface User {
     String[] getPersonnality();
     String[] getHobbies();
     String getDescription();
+    String getAttentesPersonelles();
+    String getAttentesProfessionnelles();
 }

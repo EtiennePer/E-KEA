@@ -39,5 +39,11 @@ public class ExpectationsActivity extends AppCompatActivity {
         }
 
         img_pp.setImageDrawable(img);
+
+        // Set attentes to the view
+        TextView t = findViewById(R.id.textViewPersonnelles);
+        t.setText(actualUser.getAttentesPersonelles());
+        t = findViewById(R.id.textViewProfessionnelles);
+        t.setText(actualUser.getAttentesProfessionnelles());
     }
 }

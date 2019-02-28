@@ -2,4 +2,8 @@
     <string name="app_name">E-KEA</string>
     <string name="activity_home_title">Projet approche bilan de compétence</string>
     <string name="activity_home_footer">Master 1 ICE - Informatique collaborative en entreprise</string>
+    <string name="activity_expectation_attentes_personnelles_title">Attentes personnelles :</string>
+    <string name="activity_expectation_attentes_personnelles_description">Loading ...</string>
+    <string name="activity_expectation_attentes_professionnelles_title">Attentes professionnelles :</string>
+    <string name="activity_expectation_attentes_professionnelles_description">Loading ...</string>
 </resources>
