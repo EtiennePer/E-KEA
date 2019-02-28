@@ -19,8 +19,7 @@ public class HobbiesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hobbies);
-        String[] allPersonnality = {"apprendre","confiance","curieux", "determine", "fiable", "independant", "integre", "passionne", "tenace", "travailleur"};
-
+         // Retrieve pp and name
         tv_firstLastname = findViewById(R.id.RESUME_tv_FirstnameLastname);
         img_pp = findViewById(R.id.RESUME_img_profile);
 
@@ -28,7 +27,7 @@ public class HobbiesActivity extends AppCompatActivity {
         User actualUser = ((GlobalVars) this.getApplication()).getActualUser();
 
         // Set content of form
-        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname());
+        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname() + "\n" + actualUser.getDescription() + "\n" + "Hobbies");
 
         // Retrieve the good drawable
         Drawable img = null;

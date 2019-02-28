@@ -168,6 +168,7 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Attentes"
+            android:onClick="navigateToExpectation"
             android:theme="@style/AppTheme.Button"
             />
 
@@ -237,7 +238,7 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="70dp"
-            android:text="Hobbies"
+            android:text="Loisirs"
             android:onClick="navigateToHobbies"
             android:theme="@style/AppTheme.Button"
             />

@@ -28,7 +28,7 @@ public class PersonnalityActivity extends AppCompatActivity {
         User actualUser = ((GlobalVars) this.getApplication()).getActualUser();
 
         // Set content of form
-        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname());
+        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname() + "\n" + actualUser.getDescription() + "\n" + "Personnalité");
 
         // Retrieve the good drawable
         Drawable img = null;
