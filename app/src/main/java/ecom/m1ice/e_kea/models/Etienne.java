@@ -35,6 +35,11 @@ public class Etienne implements User {
     }
 
     @Override
+    public String getDescription() {
+        return "IT Rugby";
+    }
+
+    @Override
     public String[] getHobbies() {
         String[] array = {"alcool","cinema","echec", "lecture", "sport"};
         return array;

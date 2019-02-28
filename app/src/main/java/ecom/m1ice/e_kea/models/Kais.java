@@ -37,6 +37,11 @@ public class Kais implements User {
     }
 
     @Override
+    public String getDescription() {
+        return "IT Muscular";
+    }
+
+    @Override
     public String[] getHobbies() {
         String[] array = {"musculation","peche","photo", "danser", "cuisine"};
         return array;
