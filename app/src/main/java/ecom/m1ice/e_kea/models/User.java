@@ -8,4 +8,6 @@ public interface User {
     Date getBithDate();
     String getPhotoPathName();
     String getResumePathName();
+    String[] getPersonnality();
+    String[] getHobbies();
 }

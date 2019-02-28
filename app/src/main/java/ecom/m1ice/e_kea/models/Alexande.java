@@ -5,12 +5,12 @@ import java.util.Date;
 public class Alexande implements User {
     @Override
     public String getFirstname() {
-        return null;
+        return "Alexandre";
     }
 
     @Override
     public String getLastname() {
-        return null;
+        return "Pausé";
     }
 
     @Override
@@ -26,5 +26,17 @@ public class Alexande implements User {
     @Override
     public String getResumePathName() {
         return null;
+    }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"apprendre","integre","confiance", "determine", "fiable", "curieux"};
+        return array;
+    }
+
+    @Override
+    public String[] getHobbies() {
+        String[] array = {"peche","voyage","jardinage", "cuisine", "yoga"};
+        return array;
     }
 }

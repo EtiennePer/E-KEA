@@ -7,26 +7,38 @@ public class Kais implements User {
 
     @Override
     public String getFirstname() {
-        return null;
+        return "Kais";
     }
 
     @Override
     public String getLastname() {
-        return null;
+        return "Ben Youssef";
     }
 
     @Override
     public Date getBithDate() {
-        return null;
+        return new Date(1994, 8, 07);
     }
 
     @Override
     public String getPhotoPathName() {
-        return null;
+        return "kaiss.png";
     }
 
     @Override
     public String getResumePathName() {
         return null;
+    }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"tenace","apprendre","travailleur", "curieux", "passionne", "integre"};
+        return array;
+    }
+
+    @Override
+    public String[] getHobbies() {
+        String[] array = {"musculation","peche","photo", "danser", "cuisine"};
+        return array;
     }
 }

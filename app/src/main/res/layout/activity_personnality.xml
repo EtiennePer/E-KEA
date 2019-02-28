@@ -4,6 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".PersonnalityActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/RESUME_gd_profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/RESUME_gd_profile_horiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/RESUME_gd_vertical_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <!-- Item 1 -->
+
+    <!-- Item 2 -->
+
+    <!-- Item 3 -->
+
+    <!-- Item 4 -->
+
+    <!-- Item 5 -->
+
+    <!-- Item 6 -->
+
+    <!-- Hide bar -->
+    <android.support.constraint.Guideline
+        android:id="@+id/RESUME_gd_hideBard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/RESUME_img_profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:civ_border_color="#4b8f74"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#e0e2de"
+        app:civ_shadow_radius="0"
+        app:layout_constraintBottom_toTopOf="@id/RESUME_gd_profile_horiz"
+        app:layout_constraintEnd_toStartOf="@id/RESUME_gd_profileImage"
+        app:layout_constraintRight_toLeftOf="@id/RESUME_gd_profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RESUME_tv_FirstnameLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/RESUME_img_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toBottomOf="@id/RESUME_gd_profile_horiz" />
+
+    <ImageView
+        android:id="@+id/imgView0"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+        app:srcCompat="@drawable/curieux" />
+
+    <ImageView
+        android:id="@+id/imgView1"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toBottomOf="@+id/RESUME_img_profile"
+        app:srcCompat="@drawable/apprendre" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/independant" />
+
+    <ImageView
+        android:id="@+id/imgView3"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/determine" />
+
+    <ImageView
+        android:id="@+id/imgView4"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/integre" />
+
+    <ImageView
+        android:id="@+id/imgView5"
+        android:layout_width="164dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:srcCompat="@drawable/tenace" />
+
+    <!-- Menu Items start here -->
+
+    <!-- Item 1 -->
+
+    <!-- Item 2 -->
+
+    <!-- Item 3 -->
+
+    <!-- Item 4 -->
+
+    <!-- Item 5 -->
+
+    <!-- Item 6 -->
+
+    <!-- Footer -->
+
 
 </android.support.constraint.ConstraintLayout>

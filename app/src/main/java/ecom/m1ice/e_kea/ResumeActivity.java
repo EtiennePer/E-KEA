@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.io.File;
@@ -60,11 +61,11 @@ public class ResumeActivity extends AppCompatActivity {
         // Retrieve the good drawable
         Drawable img = null;
         if (actualUser.getFirstname().toLowerCase().contains("eti")) {
-            img = getResources().getDrawable(R.drawable.pp_etienne);
+            img = getResources().getDrawable(R.drawable.etienne);
         } else if (actualUser.getFirstname().toLowerCase().contains("ka")) {
-            img = getResources().getDrawable(R.drawable.pp_kais);
+            img = getResources().getDrawable(R.drawable.kaiss);
         } else if (actualUser.getFirstname().toLowerCase().contains("alex")) {
-            img = getResources().getDrawable(R.drawable.pp_alexandre);
+            img = getResources().getDrawable(R.drawable.alexandre);
         }
 
         img_pp.setImageDrawable(img);
@@ -150,5 +151,12 @@ public class ResumeActivity extends AppCompatActivity {
     private void goTo(Class activityClass) {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
+    }
+
+    public void navigateToPersonnality(View view) {
+        startActivity(new Intent(this, PersonnalityActivity.class));
+    }
+    public void navigateToHobbies(View view) {
+        startActivity(new Intent(this, HobbiesActivity.class));
     }
 }

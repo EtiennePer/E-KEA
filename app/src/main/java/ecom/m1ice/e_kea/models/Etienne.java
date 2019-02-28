@@ -20,11 +20,23 @@ public class Etienne implements User {
 
     @Override
     public String getPhotoPathName() {
-        return "pp_etienne.png";
+        return "etienne.png";
     }
 
     @Override
     public String getResumePathName() {
         return "cv_etienne.pdf";
+    }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"integre","passionne","tenace", "apprendre", "curieux", "fiable"};
+        return array;
+    }
+
+    @Override
+    public String[] getHobbies() {
+        String[] array = {"alcool","cinema","echec", "lecture", "sport"};
+        return array;
     }
 }

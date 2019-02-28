@@ -95,6 +95,7 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Hobbies"
+            android:onClick="navigateToHobbies"
             android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
@@ -169,6 +170,7 @@
             android:id="@+id/RESUME_bt_personnality"
             android:layout_width="150dp"
             android:layout_height="80dp"
+            android:onClick="navigateToPersonnality"
             android:text="Personnalité"
             android:theme="@style/AppTheme.Button" />
 
@@ -189,7 +191,8 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="CV"
-            android:theme="@style/AppTheme.Button" />
+            android:theme="@style/AppTheme.Button"
+            />
 
     </LinearLayout>
 
