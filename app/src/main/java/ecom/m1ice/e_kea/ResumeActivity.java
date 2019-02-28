@@ -159,4 +159,7 @@ public class ResumeActivity extends AppCompatActivity {
     public void navigateToHobbies(View view) {
         startActivity(new Intent(this, HobbiesActivity.class));
     }
+    public void navigateToExpectation(View view) {
+        startActivity(new Intent(this, ExpectationsActivity.class));
+    }
 }

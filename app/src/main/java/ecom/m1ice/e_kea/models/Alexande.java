@@ -15,7 +15,12 @@ public class Alexande implements User {
 
     @Override
     public Date getBithDate() {
-        return null;
+        return new Date(1997, 5, 21);
+    }
+
+    @Override
+    public String getDescription() {
+        return "IT Traveler";
     }
 
     @Override
