@@ -53,7 +53,13 @@ public class Kais implements User {
 
     @Override
     public String[] getHobbies() {
-        String[] array = {"musculation","peche","photo", "danser", "cuisine"};
+        String[] array = {
+                "Pêche", "Je pêchais quand j'étais petit",
+                "Voyage", "Je n'hésite pas à voyager dès que j'en ai l'occasion",
+                "Jardinage", "Rien ne vaut les légumes venant de la terre !",
+                "Cuisine", "J'hérite d'une grande culture culinaire",
+                "Yoga", "Relaxant !"
+        };
         return array;
     }
 }
