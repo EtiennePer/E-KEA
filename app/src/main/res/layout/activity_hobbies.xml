@@ -55,6 +55,7 @@
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/RESUME_img_profile"
+            android:onClick="navigateToResume"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="10dp"

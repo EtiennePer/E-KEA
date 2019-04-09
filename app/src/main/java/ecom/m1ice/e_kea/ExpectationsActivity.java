@@ -1,8 +1,10 @@
 package ecom.m1ice.e_kea;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.mikhaellopez.circularimageview.CircularImageView;
@@ -45,5 +47,9 @@ public class ExpectationsActivity extends AppCompatActivity {
         t.setText(actualUser.getAttentesPersonelles());
         t = findViewById(R.id.textViewProfessionnelles);
         t.setText(actualUser.getAttentesProfessionnelles());
+    }
+
+    public void navigateToResume(View view) {
+        startActivity(new Intent(this, ResumeActivity.class));
     }
 }

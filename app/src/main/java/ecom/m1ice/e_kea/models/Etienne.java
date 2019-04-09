@@ -60,4 +60,64 @@ public class Etienne implements User {
         };
         return array;
     }
+
+    @Override
+    public String[] getSkillsSavoirFaireName() {
+        String[] array = {
+                "Java EE",
+                "Android",
+                "Javascript",
+                "Python",
+                "PHP",
+                "Symfony 3",
+                "Laravel 5",
+                "Angular 7",
+        };
+        return array;
+    }
+
+    @Override
+    public float[] getSkillsSavoirFaireRate() {
+        float[] array = {
+                2,
+                1.2F,
+                3.5F,
+                3,
+                2.4F,
+                4,
+                3.1F,
+                1.8F,
+        };
+        return array;
+    }
+
+    @Override
+    public String[] getSkillsSavoirEtreName() {
+        String[] array = {
+                "Leadeur",
+                "Patient",
+                "Pédagogue",
+                "Ouvert",
+                "Passioné",
+                "Créateur",
+                "Tolérant",
+                "Volontaire",
+        };
+        return array;
+    }
+
+    @Override
+    public float[] getSkillsSavoirEtreRate() {
+        float[] array = {
+                4,
+                4,
+                4,
+                2,
+                3,
+                1.8F,
+                1.4F,
+                1.7F,
+        };
+        return array;
+    }
 }

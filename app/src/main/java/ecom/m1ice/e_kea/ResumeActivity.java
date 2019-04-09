@@ -162,4 +162,7 @@ public class ResumeActivity extends AppCompatActivity {
     public void navigateToExpectation(View view) {
         startActivity(new Intent(this, ExpectationsActivity.class));
     }
+    public void navigateToSkills(View view) {
+        startActivity(new Intent(this, SkillsActivity.class));
+    }
 }

@@ -13,4 +13,8 @@ public interface User {
     String getDescription();
     String getAttentesPersonelles();
     String getAttentesProfessionnelles();
+    String[] getSkillsSavoirFaireName();
+    float[] getSkillsSavoirFaireRate();
+    String[] getSkillsSavoirEtreName();
+    float[] getSkillsSavoirEtreRate();
 }

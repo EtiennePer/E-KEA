@@ -1,6 +1,7 @@
 package ecom.m1ice.e_kea;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -230,5 +231,9 @@ public class HobbiesActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void navigateToResume(View view) {
+        startActivity(new Intent(this, ResumeActivity.class));
     }
 }
