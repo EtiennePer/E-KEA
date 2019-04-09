@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ecom.m1ice.e_kea">
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    <application
+        android:name=".GlobalVars"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provier_paths"></meta-data>
+        </provider>
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashScreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ResumeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ExpectationsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".SkillsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".PersonnalityActivity" android:screenOrientation="portrait" />
+        <activity android:name=".HobbiesActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CareerActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
