@@ -30,7 +30,7 @@ public class Etienne implements User {
 
     @Override
     public String[] getPersonnality() {
-        String[] array = {"integre","passionne","tenace", "apprendre", "curieux", "fiable"};
+        String[] array = {"travailleur","passionne","tenace", "determine", "curieux", "independant"};
         return array;
     }
 
@@ -52,11 +52,11 @@ public class Etienne implements User {
     @Override
     public String[] getHobbies() {
         String[] array = {
-                "Pêche", "Je pêchais quand j'étais petit",
-                "Voyage", "Je n'hésite pas à voyager dès que j'en ai l'occasion",
-                "Jardinage", "Rien ne vaut les légumes venant de la terre !",
-                "Cuisine", "J'hérite d'une grande culture culinaire",
-                "Yoga", "Relaxant !"
+                "Cuisine", "J'adore faire des repas pour mes amis/famille",
+                "Sport", "Je suis passsioné de sport depuis de nombreuses années",
+                "Voyage", "Un sac à dos, et c'est parti !",
+                "Danser", "Principalement pour amuser les copains!",
+                "Cinema", "Environ une fois par semaine, pour des films en tous genres."
         };
         return array;
     }
@@ -64,9 +64,9 @@ public class Etienne implements User {
     @Override
     public String[] getSkillsSavoirFaireName() {
         String[] array = {
-                "Java EE",
                 "Android",
-                "Javascript",
+                "Java",
+                "Kotlin",
                 "Python",
                 "PHP",
                 "Symfony 3",
@@ -79,9 +79,9 @@ public class Etienne implements User {
     @Override
     public float[] getSkillsSavoirFaireRate() {
         float[] array = {
-                2,
-                1.2F,
                 3.5F,
+                3.5F,
+                2F,
                 3,
                 2.4F,
                 4,
