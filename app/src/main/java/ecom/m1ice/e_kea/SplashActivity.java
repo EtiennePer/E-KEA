@@ -32,6 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
 
         scannedUser= readFromIntent(getIntent());
+        Log.i("Scanned",scannedUser);
         switch (scannedUser){
             case "Kais" :
                 ((GlobalVars) this.getApplication()).setActualUser(new Kais());
@@ -42,8 +43,12 @@ public class SplashActivity extends AppCompatActivity {
             case "Alexandre" :
                 ((GlobalVars) this.getApplication()).setActualUser(new Alexandre());
                 break;
+            case "Skills" :
+
                 default:
-                    ((GlobalVars) this.getApplication()).setActualUser(new Etienne());
+                    startActivity(new Intent(this, HomeActivity.class));
+                    finish();
+                    return;
         }
 
         routeToAppropriatePage();
@@ -133,7 +138,7 @@ public class SplashActivity extends AppCompatActivity {
          * an IllegalStateException is thrown.
          */
         setupForegroundDispatch(this, mNfcAdapter);
-
+        Log.i("Scanned","BBBBBBBBBBB");
     }
 
 
@@ -141,6 +146,6 @@ public class SplashActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         setIntent(intent);
         readFromIntent(intent);
-
+        Log.i("Scanned","aaaaaaaaaaaaaa");
     }
 }
