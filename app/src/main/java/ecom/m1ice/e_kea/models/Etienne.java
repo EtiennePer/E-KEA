@@ -41,12 +41,17 @@ public class Etienne implements User {
 
     @Override
     public String getAttentesPersonelles() {
-        return "Hello";
+        return "Je suis une personne qui aime s'impliquer au maximum dans ce qu'il entreprend. Que ce soit pour mes études, dans les activités sportives" +
+                " ou bien au travail, j'aime me fixer des objectifs et tout mettre en place pour les atteindre. Ma timidité me joue parfois encore quelques tours et c'est un " +
+                "des points sur lesquels je dois travailler pour m'affirmer. J'adore rigoler, faire la cuisine et passer de bons moments avec mes amis.";
     }
 
     @Override
     public String getAttentesProfessionnelles() {
-        return "Hello";
+        return "L'informatique est sans aucun doute un secteur incroyablement riche de diversité. Découvrir le monde du travail à travers une formation " +
+                "en alternance est pour moi une très bonne occasion de survoler l'ensemble des domaines liés à l'informatique. " +
+                "A terme j'espère pouvoir lancer un jour mon entreprise (pas obligatoirement dans le domaine de l'informatique) et ainsi être confronter " +
+                "à de nouvelles problématiques, à de nouveaux défis.";
     }
 
     @Override
@@ -67,11 +72,11 @@ public class Etienne implements User {
                 "Android",
                 "Java",
                 "Kotlin",
-                "Python",
-                "PHP",
-                "Symfony 3",
-                "Laravel 5",
-                "Angular 7",
+                "Angular 2",
+                "HTML/CSS",
+                "SQL",
+                "Spring",
+                "Modélisation de Processus"
         };
         return array;
     }
@@ -82,11 +87,11 @@ public class Etienne implements User {
                 3.5F,
                 3.5F,
                 2F,
-                3,
-                2.4F,
-                4,
-                3.1F,
-                1.8F,
+                2.5F,
+                3F,
+                3.5F,
+                3F,
+                2F,
         };
         return array;
     }
@@ -94,14 +99,14 @@ public class Etienne implements User {
     @Override
     public String[] getSkillsSavoirEtreName() {
         String[] array = {
-                "Leadeur",
                 "Patient",
+                "Autonome",
                 "Pédagogue",
                 "Ouvert",
-                "Passioné",
-                "Créateur",
-                "Tolérant",
-                "Volontaire",
+                "Passionné",
+                "Sportif",
+                "Vif",
+                "Timide",
         };
         return array;
     }
@@ -111,12 +116,12 @@ public class Etienne implements User {
         float[] array = {
                 4,
                 4,
-                4,
-                2,
+                2.5F,
                 3,
-                1.8F,
-                1.4F,
-                1.7F,
+                3,
+                3.5F,
+                4F,
+                2.5F,
         };
         return array;
     }

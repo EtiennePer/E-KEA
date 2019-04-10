@@ -18,6 +18,7 @@ import java.io.UnsupportedEncodingException;
 import ecom.m1ice.e_kea.models.Alexandre;
 import ecom.m1ice.e_kea.models.Etienne;
 import ecom.m1ice.e_kea.models.Kais;
+import ecom.m1ice.e_kea.models.User;
 
 public class SplashActivity extends AppCompatActivity {
     public static final String MIME_TEXT_PLAIN = "text/plain";
