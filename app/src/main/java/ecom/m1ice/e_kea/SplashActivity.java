@@ -12,13 +12,10 @@ import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.TextView;
 
 import java.io.UnsupportedEncodingException;
 
-import ecom.m1ice.e_kea.GlobalVars;
-import ecom.m1ice.e_kea.R;
-import ecom.m1ice.e_kea.models.Alexande;
+import ecom.m1ice.e_kea.models.Alexandre;
 import ecom.m1ice.e_kea.models.Etienne;
 import ecom.m1ice.e_kea.models.Kais;
 
@@ -44,7 +41,7 @@ public class SplashActivity extends AppCompatActivity {
                 ((GlobalVars) this.getApplication()).setActualUser(new Etienne());
                 break;
             case "Alexandre" :
-                ((GlobalVars) this.getApplication()).setActualUser(new Alexande());
+                ((GlobalVars) this.getApplication()).setActualUser(new Alexandre());
                 break;
             case "Skills" :
 

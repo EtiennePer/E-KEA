@@ -6,8 +6,15 @@ public interface User {
     String getFirstname();
     String getLastname();
     Date getBithDate();
-    String getDescription();
     String getPhotoPathName();
     String getResumePathName();
     String[] getPersonnality();
+    String[] getHobbies();
+    String getDescription();
+    String getAttentesPersonelles();
+    String getAttentesProfessionnelles();
+    String[] getSkillsSavoirFaireName();
+    float[] getSkillsSavoirFaireRate();
+    String[] getSkillsSavoirEtreName();
+    float[] getSkillsSavoirEtreRate();
 }

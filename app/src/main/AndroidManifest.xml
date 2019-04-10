@@ -11,10 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provier_paths"></meta-data>
+        </provider>
+
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/SplashScreenTheme">
+            android:theme="@style/SplashScreenTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -26,13 +37,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".ResumeActivity" />
-        <activity android:name=".ExpectationsActivity" />
-        <activity android:name=".SkillsActivity" />
-        <activity android:name=".PersonnalityActivity" />
-        <activity android:name=".HobbiesActivity" />
-        <activity android:name=".CareerActivity"></activity>
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ResumeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ExpectationsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".SkillsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".PersonnalityActivity" android:screenOrientation="portrait" />
+        <activity android:name=".HobbiesActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CareerActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

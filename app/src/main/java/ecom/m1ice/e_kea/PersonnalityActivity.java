@@ -1,8 +1,10 @@
 package ecom.m1ice.e_kea;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,7 +30,7 @@ public class PersonnalityActivity extends AppCompatActivity {
         User actualUser = ((GlobalVars) this.getApplication()).getActualUser();
 
         // Set content of form
-        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname());
+        tv_firstLastname.setText(actualUser.getFirstname() + " " + actualUser.getLastname() + "\n" + actualUser.getDescription() + "\n" + "Personnalité");
 
         // Retrieve the good drawable
         Drawable img = null;
@@ -128,5 +130,9 @@ public class PersonnalityActivity extends AppCompatActivity {
 
 
         img_pp.setImageDrawable(img);
+    }
+
+    public void navigateToResume(View view) {
+        startActivity(new Intent(this, ResumeActivity.class));
     }
 }

@@ -2,43 +2,25 @@ package ecom.m1ice.e_kea.models;
 
 import java.util.Date;
 
-public class Kais implements User {
-
-
+public class Alexandre implements User {
     @Override
     public String getFirstname() {
-        return "Kais";
+        return "Alexandre";
     }
 
     @Override
     public String getLastname() {
-        return "Ben Youssef";
+        return "Pausé";
     }
 
     @Override
     public Date getBithDate() {
-        return new Date(1994, 8, 07);
-    }
-
-    @Override
-    public String getPhotoPathName() {
-        return "kaiss.png";
-    }
-
-    @Override
-    public String getResumePathName() {
-        return null;
-    }
-
-    @Override
-    public String[] getPersonnality() {
-        String[] array = {"tenace","apprendre","travailleur", "curieux", "passionne", "integre"};
-        return array;
+        return new Date(1997, 5, 21);
     }
 
     @Override
     public String getDescription() {
-        return "IT Muscular";
+        return "IT Traveler";
     }
 
     @Override
@@ -49,6 +31,22 @@ public class Kais implements User {
     @Override
     public String getAttentesProfessionnelles() {
         return "Hello";
+    }
+
+    @Override
+    public String getPhotoPathName() {
+        return null;
+    }
+
+    @Override
+    public String getResumePathName() {
+        return "cv_alexandre.pdf";
+    }
+
+    @Override
+    public String[] getPersonnality() {
+        String[] array = {"apprendre","integre","confiance", "determine", "fiable", "curieux"};
+        return array;
     }
 
     @Override
@@ -122,4 +120,5 @@ public class Kais implements User {
         };
         return array;
     }
+
 }
