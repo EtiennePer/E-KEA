@@ -74,7 +74,7 @@ public class ResumeActivity extends AppCompatActivity {
         bt_resume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OpenFileUtils.openResume(actualUser.getResumePathName(), getParent());
+                OpenFileUtils.openResume(actualUser.getResumePathName(), ResumeActivity.this);
             }
         });
 
