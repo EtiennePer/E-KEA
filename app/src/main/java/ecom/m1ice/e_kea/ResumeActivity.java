@@ -103,4 +103,7 @@ public class ResumeActivity extends AppCompatActivity {
     public void navigateToSkills(View view) {
         startActivity(new Intent(this, SkillsActivity.class));
     }
+    public void navigateToCareer(View view) {
+        startActivity(new Intent(this, CareerActivity.class));
+    }
 }

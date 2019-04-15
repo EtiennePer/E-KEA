@@ -19,10 +19,12 @@ import ecom.m1ice.e_kea.models.Alexandre;
 import ecom.m1ice.e_kea.models.Etienne;
 import ecom.m1ice.e_kea.models.Kais;
 import ecom.m1ice.e_kea.models.User;
+import ecom.m1ice.e_kea.tools.OpenFileUtils;
 
 public class SplashActivity extends AppCompatActivity {
     public static final String MIME_TEXT_PLAIN = "text/plain";
     private String scannedUser="";
+
     Context context;
     private NfcAdapter  mNfcAdapter;
     @Override
@@ -45,6 +47,29 @@ public class SplashActivity extends AppCompatActivity {
                 ((GlobalVars) this.getApplication()).setActualUser(new Alexandre());
                 break;
             case "Skills" :
+                startActivity(new Intent(this, SkillsActivity.class));
+                finish();
+                return;
+            case "Hobbies" :
+                startActivity(new Intent(this, HobbiesActivity.class));
+                finish();
+                return;
+            case "Expectations" :
+                startActivity(new Intent(this, ExpectationsActivity.class));
+                finish();
+                return;
+            case "Career" :
+                startActivity(new Intent(this, CareerActivity.class));
+                finish();
+                return;
+            case "Personality" :
+                startActivity(new Intent(this, PersonnalityActivity.class));
+                finish();
+                return;
+            case "Resume" :
+                OpenFileUtils.openResume( ((GlobalVars) this.getApplication()).getActualUser().getResumePathName(),this);
+                finish();
+                return;
 
                 default:
                     startActivity(new Intent(this, HomeActivity.class));

@@ -220,6 +220,7 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Carrière"
+            android:onClick="navigateToCareer"
             android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
