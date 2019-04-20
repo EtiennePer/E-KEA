@@ -17,4 +17,5 @@ public interface User {
     float[] getSkillsSavoirFaireRate();
     String[] getSkillsSavoirEtreName();
     float[] getSkillsSavoirEtreRate();
+    String[] getCareer();
 }

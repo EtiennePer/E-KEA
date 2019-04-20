@@ -176,6 +176,22 @@
             app:layout_constraintVertical_bias="0.105"
             app:srcCompat="@drawable/cinema" />
 
+        <TextView
+            android:id="@+id/textViewInfoHobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/activity_hobbies_clickForMoreInformation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
+            app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+
         <!-- Menu Items start here -->
 
         <!-- Item 1 -->

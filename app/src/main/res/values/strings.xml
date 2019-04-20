@@ -8,4 +8,6 @@
     <string name="activity_expectation_attentes_professionnelles_description">Loading ...</string>
     <string name="activity_skills_savoir_faire">Savoir-faire</string>
     <string name="activity_skills_savoir_etre">Savoir-être</string>
+    <string name="activity_hobbies_clickForMoreInformation">Les images sont cliquables !</string>
+    <string name="activity_carrer_avenir">A venir - Prochainement ...</string>
 </resources>

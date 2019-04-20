@@ -63,6 +63,7 @@ public class HobbiesActivity extends AppCompatActivity {
             case "Sport" : image0.setImageResource(R.drawable.sport); break;
             case "Voyage" : image0.setImageResource(R.drawable.voyage); break;
             case "Yoga" : image0.setImageResource(R.drawable.yoga); break;
+            case "Jeux" : image0.setImageResource(R.drawable.jeusociete); break;
         }
 
         ImageView image1 = (ImageView) findViewById(R.id.imgView1);
@@ -82,6 +83,7 @@ public class HobbiesActivity extends AppCompatActivity {
             case "Sport" : image1.setImageResource(R.drawable.sport); break;
             case "Voyage" : image1.setImageResource(R.drawable.voyage); break;
             case "Yoga" : image1.setImageResource(R.drawable.yoga); break;
+            case "Jeux" : image1.setImageResource(R.drawable.jeusociete); break;
         }
 
         ImageView image2 = (ImageView) findViewById(R.id.imgView2);
@@ -101,6 +103,7 @@ public class HobbiesActivity extends AppCompatActivity {
             case "Sport" : image2.setImageResource(R.drawable.sport); break;
             case "Voyage" : image2.setImageResource(R.drawable.voyage); break;
             case "Yoga" : image2.setImageResource(R.drawable.yoga); break;
+            case "Jeux" : image2.setImageResource(R.drawable.jeusociete); break;
         }
 
         ImageView image3 = (ImageView) findViewById(R.id.imgView3);
@@ -120,6 +123,7 @@ public class HobbiesActivity extends AppCompatActivity {
             case "Sport" : image3.setImageResource(R.drawable.sport); break;
             case "Voyage" : image3.setImageResource(R.drawable.voyage); break;
             case "Yoga" : image3.setImageResource(R.drawable.yoga); break;
+            case "Jeux" : image3.setImageResource(R.drawable.jeusociete); break;
         }
 
         ImageView image4 = (ImageView) findViewById(R.id.imgView4);
@@ -139,6 +143,7 @@ public class HobbiesActivity extends AppCompatActivity {
             case "Sport" : image4.setImageResource(R.drawable.sport); break;
             case "Voyage" : image4.setImageResource(R.drawable.voyage); break;
             case "Yoga" : image4.setImageResource(R.drawable.yoga); break;
+            case "Jeux" : image4.setImageResource(R.drawable.jeusociete); break;
         }
 
         image0.setOnClickListener(new View.OnClickListener() {

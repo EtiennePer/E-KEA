@@ -109,14 +109,11 @@
         android:id="@+id/imgView2"
         android:layout_width="160dp"
         android:layout_height="130dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgView4"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
         app:layout_constraintTop_toBottomOf="@+id/imgView0"
-        app:layout_constraintVertical_bias="0.452"
         app:srcCompat="@drawable/independant" />
 
     <ImageView
@@ -125,25 +122,23 @@
         android:layout_height="130dp"
         android:layout_marginStart="192dp"
         android:layout_marginLeft="192dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgView5"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
         app:layout_constraintTop_toBottomOf="@+id/imgView1"
-        app:layout_constraintVertical_bias="0.45"
         app:srcCompat="@drawable/determine" />
 
     <ImageView
         android:id="@+id/imgView4"
         android:layout_width="160dp"
         android:layout_height="130dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
-        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:layout_constraintTop_toBottomOf="@+id/imgView2"
+        app:layout_constraintVertical_bias="0.193"
         app:srcCompat="@drawable/integre" />
 
     <ImageView
@@ -152,11 +147,12 @@
         android:layout_height="130dp"
         android:layout_marginStart="192dp"
         android:layout_marginLeft="192dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/RESUME_gd_vertical_line"
-        app:layout_constraintTop_toTopOf="@+id/imgView0"
+        app:layout_constraintTop_toBottomOf="@+id/imgView3"
+        app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/tenace" />
 
     <!-- Menu Items start here -->

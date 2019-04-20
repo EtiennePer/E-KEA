@@ -122,4 +122,22 @@ public class Kais implements User {
         };
         return array;
     }
+
+    @Override
+    public String[] getCareer() {
+        //A gauche :    Etude-  graduate (=done), livre(= en cours)
+        //              Stage-  travail (=done), star (= en cours)
+        //A droite : Votre expérience
+        String[] array = {
+                "", "",
+                "", "",
+                "", "",
+                "", "",
+                "", "",
+                "", "",
+                "", "",
+                "", ""
+        };
+        return array;
+    }
 }

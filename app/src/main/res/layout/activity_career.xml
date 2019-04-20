@@ -1,6 +1,457 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CareerActivity"/>
+    tools:context=".CareerActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ExpectationsActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".HobbiesActivity">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".PersonnalityActivity"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/textCareer1"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer1"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer1" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer8"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="376dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="392dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer7"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="332dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="348dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer6"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="284dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="300dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer5"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="232dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="248dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer4"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="196dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer3"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="124dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="140dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="84dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer1"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCareer2"
+                    android:layout_width="37dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="68dp"
+                    android:src="@drawable/avenir"
+                    app:civ_border_color="#008577"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view5" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="27dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/RESUME_gd_profile_horiz" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/RESUME_gd_profileImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/RESUME_gd_profile_horiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/RESUME_gd_vertical_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="8dp" />
+
+                <!-- Item 1 -->
+
+                <!-- Item 2 -->
+
+                <!-- Item 3 -->
+
+                <!-- Item 4 -->
+
+                <!-- Item 5 -->
+
+                <!-- Item 6 -->
+
+                <!-- Hide bar -->
+                <android.support.constraint.Guideline
+                    android:id="@+id/RESUME_gd_hideBard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.24" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/RESUME_img_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:onClick="navigateToResume"
+                    app:civ_border_color="#4b8f74"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#e0e2de"
+                    app:civ_shadow_radius="0"
+                    app:layout_constraintBottom_toTopOf="@id/RESUME_gd_profile_horiz"
+                    app:layout_constraintEnd_toStartOf="@id/RESUME_gd_profileImage"
+                    app:layout_constraintRight_toLeftOf="@id/RESUME_gd_profileImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/RESUME_tv_FirstnameLastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/RESUME_img_profile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="53dp" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintRight_toLeftOf="@id/RESUME_gd_vertical_line"
+                    app:layout_constraintTop_toBottomOf="@id/RESUME_gd_profile_horiz" />
+
+                <TextView
+                    android:id="@+id/textCareer2"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer2"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer2"
+                    app:layout_constraintVertical_bias="0.421" />
+
+                <TextView
+                    android:id="@+id/textCareer3"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer3"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer3"
+                    app:layout_constraintVertical_bias="0.842" />
+
+                <TextView
+                    android:id="@+id/textCareer4"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.088"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer4"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer4" />
+
+                <TextView
+                    android:id="@+id/textCareer5"
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer5"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer5"
+                    app:layout_constraintVertical_bias="0.75" />
+
+                <TextView
+                    android:id="@+id/textCareer6"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer6"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer6"
+                    app:layout_constraintVertical_bias="0.437" />
+
+                <TextView
+                    android:id="@+id/textCareer7"
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer7"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer7" />
+
+                <TextView
+                    android:id="@+id/textCareer8"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/activity_carrer_avenir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCareer8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.093"
+                    app:layout_constraintStart_toEndOf="@+id/imgCareer8"
+                    app:layout_constraintTop_toTopOf="@+id/imgCareer8"
+                    app:layout_constraintVertical_bias="0.421" />
+
+                <!-- Menu Items start here -->
+
+                <!-- Item 1 -->
+
+                <!-- Item 2 -->
+
+                <!-- Item 3 -->
+
+                <!-- Item 4 -->
+
+                <!-- Item 5 -->
+
+                <!-- Item 6 -->
+
+                <!-- Footer -->
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
