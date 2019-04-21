@@ -138,8 +138,8 @@ public class Alexandre implements User {
                 "livre", "2018-2020 - Master MIASHS parcours ICE - Université Toulouse Jean Jaurès",
                 "travail", "2018 - Air France - Alternance développeur chargé des tests (développement et management)",
                 "graduate", "2018 - Licence MIASHS parcours MIAGE - Université Paul Sabatier et Université Capitole",
-                "travail", "Stage 7 semaines - Développement d'un site web avec backoffice pour la fédération française de danse de la Réunion",
                 "graduate", "2017 - BTS SIO option SLAM - Lycée Bellepierre - Réunion",
+                "travail", "Stage 7 semaines - Développement d'un site web avec backoffice pour la fédération française de danse de la Réunion",
                 "travail", "Stage 5 semaines - Développeur sur l'application CityScreen dans une start-up de 5 personnes",
                 "graduate", "2015 - Bac S SVT option ISN - Lycée Bel Air - Réunion",
         };
