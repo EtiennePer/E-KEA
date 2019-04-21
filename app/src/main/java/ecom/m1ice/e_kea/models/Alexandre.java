@@ -134,14 +134,14 @@ public class Alexandre implements User {
         //              Stage-  travail (=done), star (= en cours)
         //A droite : Votre expérience
         String[] array = {
-                "graduate", "2015 - Bac S SVT option ISN - Lycée Bel Air - Réunion",
-                "travail", "Stage 5 semaines - Développeur sur l'application CityScreen dans une start-up de 5 personnes",
-                "travail", "Stage 7 semaines - Développement d'un site web avec backoffice pour la fédération française de danse de la Réunion",
-                "graduate", "2017 - BTS SIO option SLAM - Lycée Bellepierre - Réunion",
+                "star", "2018-2020 - Air France - Alternance développeur Angular 7, big data et gestion de projet",
+                "livre", "2018-2020 - Master MIASHS parcours ICE - Université Toulouse Jean Jaurès",
                 "travail", "2018 - Air France - Alternance développeur chargé des tests (développement et management)",
                 "graduate", "2018 - Licence MIASHS parcours MIAGE - Université Paul Sabatier et Université Capitole",
-                "star", "2018-2020 - Air France - Alternance développeur Angular 7, big data et gestion de projet",
-                "livre", "2018-2020 - Master MIASHS parcours ICE - Université Toulouse Jean Jaurès"
+                "travail", "Stage 7 semaines - Développement d'un site web avec backoffice pour la fédération française de danse de la Réunion",
+                "graduate", "2017 - BTS SIO option SLAM - Lycée Bellepierre - Réunion",
+                "travail", "Stage 5 semaines - Développeur sur l'application CityScreen dans une start-up de 5 personnes",
+                "graduate", "2015 - Bac S SVT option ISN - Lycée Bel Air - Réunion",
         };
         return array;
     }

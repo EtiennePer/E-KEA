@@ -132,13 +132,13 @@ public class Etienne implements User {
         //              Stage-  travail (=done), star (= en cours)
         //A droite : Votre expérience
         String[] array = {
-                "", "",
-                "", "",
-                "", "",
-                "", "",
-                "", "",
-                "", "",
-                "", "",
+                "travail", "2018-2020 - Air France - Alternance développeur Java et Angular7",
+                "graduate", "2018-2020 - Master MIASHS parcours ICE - Université Toulouse Jean Jaurès",
+                "travail", "2017 - 2018 ENGIE - Alternance développeur Android et C# WPF",
+                "graduate", "2017-2018 - Licence Professionnelle APSIO - IUT de Blagnac",
+                "travail", "2017 - INRA - Stage développeur automaticien - Toulouse",
+                "graduate", "2015 - 2017 - IUT Informatique - Limoges",
+                "travail", " 2015 - Axereal - Ouvrier agricole",
                 "", ""
         };
         return array;
